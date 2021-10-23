@@ -1,0 +1,10 @@
+{
+  "name": "kakedashigachi",
+  "runtime": "python3.9",
+  "description": "kakedashi lambda",
+  "region": "ap-northeast-1",
+  "handler": "lambda_function.lambda_handler",
+  "role": "arn:aws:iam::445158105293:role/kakedashi_lambda",
+  "timeout": 30,
+  "memory": 128
+}
