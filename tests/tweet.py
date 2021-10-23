@@ -2,7 +2,9 @@ import os
 from dotenv import load_dotenv
 import tweepy
 
-load_dotenv('../.env')
+
+env_path = os.path.join(os.path.dirname(__file__), '../.env')
+load_dotenv(os.path.normpath(env_path))
 
 # auth tweetpy
 auth = tweepy.OAuthHandler(os.environ["API_KEY"], os.environ["API_SECRET"])
